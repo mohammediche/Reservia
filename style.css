@@ -1,0 +1,734 @@
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('police/Raleway-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+body 
+{
+	font-family: 'Raleway-Regular', sans-sérif;
+	padding: 0;
+	margin: 0;
+}
+p
+{
+	color: #4D4D4D;
+}
+#padding_debut
+{
+	padding-left: 100px;
+	padding-right: 80px;
+}
+#wrapper
+{
+	padding-left: 80px;
+	padding-right: 80px;	
+}
+
+
+ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+li
+{
+	list-style-type: none;
+}
+h1
+{
+	font-weight: bold;
+	font-size: 1.6em;
+}
+a
+{
+	text-decoration: none;
+}
+.items1
+{
+	text-decoration: none;
+	color: #0065FC;
+
+}
+.items2,
+.items3
+{
+	text-decoration: none;
+	color: black;
+}
+
+
+
+/*********************NAVBAR*********************/
+.logo
+{
+	width: 97px;
+	height: 45px;
+	padding-top: 30px;
+}
+
+
+#second_flex
+{
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	position: relative;
+    bottom: 30px;
+	
+
+}
+
+
+#second_flex li
+{
+	
+	font-size: 1.2em;
+	font-weight: bolder;
+	
+}
+#second_flex a
+{
+	text-decoration: none;
+	padding: 20px 30px 20px 25px;
+
+}
+
+.items:hover
+{
+	border-top: 1px solid #0065FC;
+	color: #0065FC;
+
+}
+
+
+
+
+
+
+
+
+
+/**************************input partie Recherche*********************/
+::placeholder
+{
+	color: black;
+	font-weight: bold;
+	
+}
+
+input[type=text]
+{
+	
+	border:1px solid #DBE0E4;  /* #F0F1F2*/
+	outline: none;
+	padding: 13px 12px 13px 2px;
+	box-sizing: border-box;
+	transition: .3s;
+	border-radius: 12px 0 0 12px;	
+}
+
+input[type=text]
+{
+	padding-left: 50px; 
+	font-size:  1.2em;
+	font-weight: bold;
+}
+.inputWithIcon
+{
+	position: relative;
+}
+.fa-map-marker-alt
+{
+	position: absolute;
+	bottom: 2px;
+	left: 1px;
+
+
+	padding: 16px 18px 16px 18px;
+	background-color: #F2F2F2;
+	border-radius: 11px 0 0 12px;
+
+}
+   /********Switich with icone*******/
+.fa-search
+{
+	position: relative;
+    padding: 18px 18px 17px 18px;
+    border: 1px solid #DBE0E4;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background-color: #0065FC;
+    color: #fff;
+    right: 17px;
+
+}  
+
+input[type=submit]
+{
+	position: relative;
+	display: inline-block;
+	padding: 18px 10px 17px 2px;
+	border:1px solid #DBE0E4;
+	cursor: pointer;
+	border-radius: 0 12px 12px 0;
+	border:none;
+	outline: none;
+	background-color: #0065FC;
+	color: #fff;
+	right: 10px;
+	bottom: 1px;
+}
+input[type=text]:focus + i 
+{
+	color: dodgerBlue;
+}
+
+input[type=text]:focus
+{
+	border-color: dodgerBlue;
+	box-shadow: 0 0 3px 0 dodgerBlue;
+	
+}
+
+
+/*****************************Les 4 Filtres ************************/ /*padding: 25px 30px 25px 25px;*/
+#FiltreStyle
+{
+	display: flex;
+	
+}
+#FiltreStyle_media
+{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 30px;
+	flex-wrap: wrap;
+	width: 90%;
+}
+
+#FiltreStyle a
+{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+#FiltreStyle a:hover
+{
+	color: #0065FC;
+}
+
+#FiltreStyle span
+{
+	font-weight: bold;
+	font-size: 1.2em;
+	padding-top: 30px;
+	padding-right: 50px;
+
+}
+.borderFiltres
+{
+	border: 1px solid #DBE0E4;
+	border-radius: 40px;
+	padding: 0px 15px 0px 15px;
+	margin: 5px;
+
+
+}
+#FiltreStyle i
+{
+	position: relative;
+	right: 18px;
+	border:2px solid grey;
+	border-radius: 40px;
+	padding: 15px;  /**Le Padding Des differentes bordures faites par le padding de l'icone**/
+	background-color: #DEEBFF;
+	color: #0065FC;
+	border:none;
+	outline: none;
+}
+.borderFiltres:hover
+{
+	background-color: #DEEBFF;
+	transition: .5s;
+}
+/******Plus de 500 logements etc...******/
+.fa-info 
+{
+	color: #0065FC;
+	padding: 7px 12px;
+	border: 1px solid #D3D3D3;
+	border-radius: 50%;
+}
+#PaddingP
+{
+
+	padding-left: 50px;
+	position: relative;
+	bottom: 40px;
+}
+.PaddingPI
+{
+	padding-top: 30px;
+}
+/****************************** Hébergements à Marseille****************************/
+
+#PremiereSection
+{
+	
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	width: 65%;
+	margin-left: 10px;
+	margin-right: 20px;
+
+
+}
+#PremiereSection h2
+{
+	padding-left: 25px;
+	margin-top: 30px;
+	margin-bottom:40px;
+}
+#PremiereSection img
+{
+	width: 100%;
+	height: 140px;
+	border-radius: 20px 20px 0 0;
+	object-fit: cover;
+}
+#BordureFlex_first
+{
+
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;  /****à enlever quand je commence la partie Respensive****/
+	
+}
+#BordureFlex_second
+{
+	
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	
+}
+
+.miniBordure
+{
+	border: 1px solid #F2F2F2;
+	border-radius: 20px; 
+	background-color: white;
+	box-shadow: 0 0 6px 3px #b1b1b14b;
+	margin-bottom: 40px;
+	width: 30%;
+
+}
+
+.miniBordure:hover
+{
+	transform: scale(1.05);
+	transition: 0.2s ease;
+}
+
+.star-icons
+{
+	color: #0065FC;
+	padding: 0 0 10px 10px;
+
+}
+#PremiereSection a
+{
+	color: black;
+}
+
+#PremiereSection h4
+{
+	margin: 0px;
+	padding: 10px 0 0 10px;
+	font-weight: bold;
+}
+
+#PremiereSection p
+{
+	margin: 0px;
+	padding: 0 0 10px 10px;
+}
+#PremiereSection span
+{
+	font-weight: bold;
+}
+
+.other-page
+{
+	font-weight: bold;
+	padding: 30px;
+	font-size: 1.2em;
+}
+
+/********************************ASIDE*********************************/
+
+aside
+{
+
+	
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	width: 28%;
+	height: 700px;
+	padding: 20px;
+
+	
+}
+main        /***********Le Main qui regroupe  Section et Aside*************/
+{
+	display: flex;
+	
+}
+
+#asideTitle
+{
+	display: flex;	
+	align-items: center;
+	justify-content: space-between;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	
+
+}
+
+
+
+
+aside img
+{
+	width: 120px;
+	height: 100%;
+	border-radius: 20px 0px 0 20px;
+	object-fit: cover;
+}
+
+
+
+.miniBordure_aside
+{
+	
+	border-radius: 20px; 
+	background-color: white;
+	box-shadow: 0 0 6px 3px #b1b1b14b;
+	margin-bottom: 40px;
+	height: 170px;
+	padding: 2px;
+	width: 100%;   
+	height: 170px;
+	display: flex;
+
+
+
+
+}
+
+.miniBordure_aside:hover
+{
+	transform: scale(1.05);
+	transition: 0.4s ease;
+}
+
+.aside_padding
+{
+	padding: 20px;
+}
+aside a
+{
+	color: black;
+}
+
+aside h4
+{
+	margin: 0px;
+	
+
+}
+aside p
+{
+	margin: 0px;
+	
+	
+}
+aside span
+{
+	font-weight: bold;
+}
+.star-icons_aside
+{
+	color: #0065FC;
+	padding-top: 50px;
+}
+
+/********************************2éme section avant le footer *******************************/
+#DeuxiemeSection
+{
+	padding-left: 30px;
+	padding-bottom: 50px;
+}
+
+
+#DeuxiemeSection h2
+{
+	margin: 0;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+#DeuxiemeSection h4
+{
+	margin: 15px 10px;
+	color: black;
+
+}
+
+
+#Activites_groupe
+{
+	width: 95%;
+	
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.Activites_column
+
+{
+	display: flex;
+	flex-direction: column;
+	width: 23%;
+}
+
+/*********** MES Bordures*************/
+
+.PremiereBordure_final
+{
+	
+	width: 23%;
+	height: 100%;  /*** = 450px ***/
+	border-radius: 15px;
+	box-shadow: 0 0 6px 3px #b1b1b14b;
+}
+
+.PremiereBordure_final:hover
+{
+   transform: scale(1.05);
+	transition: 0.2s ease;
+
+}
+
+
+.PremiereBordure_final img
+{
+	object-fit: cover;
+	width: 100%;
+	height: 350px;
+	border-radius: 15px 15px 0 0;  
+	
+}
+
+.DeuxiemeBordure_final
+{
+	
+	height: 58%;
+	border-radius: 15px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 6px 3px #b1b1b14b;
+
+}
+.DeuxiemeBordure_final img
+{
+	object-fit: cover;
+	width: 100%;
+	height: 180px;
+	border-radius: 15px 15px 0 0;
+
+}
+.DeuxiemeBordure_final:hover
+{
+   transform: scale(1.05);
+	transition: 0.2s ease;
+
+}
+
+
+.TroisiemeBordure_final
+{
+	
+	height: 36.5%;
+	border-radius: 15px;
+	box-shadow: 0 0 6px 3px #b1b1b14b;
+
+}
+.TroisiemeBordure_final img
+{
+	object-fit: cover;
+	width: 100%;
+	height: 96px;
+	border-radius: 15px 15px 0 0;
+}
+.TroisiemeBordure_final:hover
+{
+   transform: scale(1.05);
+	transition: 0.2s ease;
+
+}
+
+.QuatriemeBordure_final
+{
+	
+	width: 23%;
+	height: 100%;  /*** = 450px ***/
+	border-radius: 15px;
+	box-shadow: 0 0 6px 3px #b1b1b14b;
+}
+.QuatriemeBordure_final img
+{
+	object-fit: cover;
+	width: 100%;
+	height: 350px;
+	border-radius: 15px 15px 0 0;  
+	
+}
+.QuatriemeBordure_final:hover
+{
+   transform: scale(1.05);
+	transition: 0.2s ease;
+
+}
+
+.CinquiemeBordure_final
+{
+	
+	height: 47%;
+	border-radius: 15px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 6px 3px #b1b1b14b;
+
+}
+.CinquiemeBordure_final img
+{
+	object-fit: cover;
+	width: 100%;
+	height: 140px;
+	border-radius: 15px 15px 0 0;
+}
+.CinquiemeBordure_final:hover
+{
+   transform: scale(1.05);
+	transition: 0.2s ease;
+
+}
+
+.SixiemeBordure_final
+{
+	
+	height: 47%;
+	border-radius: 15px;
+	box-shadow: 0 0 6px 3px #b1b1b14b;
+
+}
+.SixiemeBordure_final img
+{
+	object-fit: cover;
+	width: 100%;
+	height: 140px;
+	border-radius: 15px 15px 0 0;
+}
+.SixiemeBordure_final:hover
+{
+   transform: scale(1.05);
+	transition: 0.2s ease;
+
+}
+
+ /**************************** FOOTER ****************************/
+ footer
+ {
+ 	background-color: #F2F2F2;
+ 	width: 100%;
+ 	height: auto;
+ }
+
+ footer h4
+ {
+ 	padding: 0;
+ 	margin-bottom: 20px;
+ 	margin-top: 0px;
+ 	font-size: 1.1em;
+ 	
+ }
+ 
+ footer a
+ {
+ 	color: #4D4D4D;
+ 	line-height: 1.5;
+
+ }
+ footer a:hover
+ {
+ 	color :#0065FC;
+ 	transition: color .3s;
+ }
+
+ #Footer_flex
+ {
+ 	display: flex;
+ 	/*justify-content: space-around;*/
+ 	
+ 	justify-content: space-evenly;
+ 	position: relative;
+    right: 150px;
+ 	
+
+ }
+ .Footer_description
+ {
+ 	margin-bottom: 50px;
+   margin-top: 40px;
+   
+ }
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

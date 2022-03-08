@@ -1,0 +1,360 @@
+     
+         /* tout vas etre modifier sauf NAV*/
+
+         /****Header nav Pour taille Telephone ****/
+         @media screen and (max-width: 600px )
+         {
+
+            
+            .items1
+            {
+                position: relative;
+                bottom: 35px;
+            }
+
+
+            #second_flex li
+            {
+                width: 50%;              
+            }
+
+            #second_flex
+            {
+                flex-wrap: wrap-reverse;
+                margin-top: 30px;
+            }
+
+            #second_flex li
+            {
+                text-align: center;
+            }
+
+          
+
+            #second_flex li:first-child
+            {
+                border-bottom: 2px solid #F2F2F2;
+                padding-bottom: 10px;
+            }
+
+            #second_flex li:nth-child(2)
+            {
+                border-bottom: 2px solid #F2F2F2;
+                padding-bottom: 10px;
+            }
+
+
+            #second_flex li:first-child:hover
+            {
+                border-bottom: 1px solid #0065FC;
+                padding-bottom: 10px;
+
+            }
+            #second_flex li:nth-child(2):hover
+            {
+                border-bottom: 1px solid #0065FC;
+                padding-bottom: 10px;
+            }
+            
+            .logo
+            {
+                  padding-left: 30px;
+            }
+
+            .items:hover
+            {
+                border-top: none;
+                
+            }     
+
+            #padding_debut
+            {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            
+            h1
+            {
+                margin-top: 40px;
+            }
+
+            /***FOOTER***/
+            #Footer_flex
+            {
+                padding: 30px 40px;
+                flex-direction: column; 
+            }
+            .Footer_description
+            {
+                margin-bottom: 20px;
+                margin-top: 20px;
+      
+            }
+        }
+
+        
+
+        
+        
+        
+
+
+
+        
+
+
+        /***Barre de recherche**/
+ @media screen and (min-width: 1110px )
+ {
+         i.fa-search
+         {
+          display: none;
+         }
+         
+ }
+
+@media screen and (max-width: 1109px )
+ {
+     input[type=submit]
+     {
+      display: none;
+     }
+     input[type=text]
+     {
+      width: 50%;
+     }
+}
+
+@media screen and (max-width: 768px )
+{
+    input[type=text]
+    {
+     width:70%;
+    }
+}
+
+
+
+
+
+
+
+/***** géneral ****/
+@media screen and (max-width:1180px ) and (min-width: 565px )
+{
+	
+    #padding_debut
+    {
+    	padding-right: 20px;
+    	padding-left: 20px;
+    }
+}     
+
+@media screen and (max-width:1180px ) 
+{   
+    #wrapper
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /**Aside**/
+    main
+    {
+      flex-direction: column-reverse;
+      
+    }
+    aside
+    {
+      width: auto;
+      margin-bottom: 80px;
+    }
+    .miniBordure_aside:hover
+    {
+
+     transform: scale(1.02);  
+    }
+
+ /****Section****/
+    #PremiereSection
+    {
+     width: auto;
+     margin-right: 0px;
+     margin-left: 0px;
+    }
+
+    #Footer_flex
+    {
+      right: 100px;
+    }
+
+}
+/*******Filtres*******/
+@media screen and (max-width: 1180px ) and (min-width: 565px )
+{
+  
+    #FiltreStyle_media
+    {
+    	display: block;
+    	padding-top: 10px;
+
+    }
+    #FiltreStyle
+    {
+    	display: block;
+    	margin-top: 30px;
+    }
+}
+@media screen and (max-width: 565px )
+{
+	
+	#FiltreStyle
+	{
+		display: block;	
+		margin-top: 30px;
+	}
+	#FiltreStyle_media
+    {
+    	display: flex;
+    	padding-top: 10px;
+    }
+}
+
+
+
+@media screen and (max-width:1045px )
+{
+    
+    /****DerniereSection****/
+    #DeuxiemeSection
+    {
+    	padding-left: 0px;
+    }
+    #Activites_groupe
+    {
+    	display: block;
+    	width: 100%;
+
+    }
+    .Activites_column
+    {
+    	width: 100%;
+    }
+    
+    .PremiereBordure_final,
+    .DeuxiemeBordure_final,
+    .TroisiemeBordure_final,
+    .QuatriemeBordure_final,
+    .CinquiemeBordure_final,
+    .SixiemeBordure_final
+    {
+    	height: 200px;
+    	width: 100%;
+    	margin-bottom: 20px;
+    }
+
+    .PremiereBordure_final img,
+    .DeuxiemeBordure_final img,
+    .TroisiemeBordure_final img,
+    .QuatriemeBordure_final img,
+    .CinquiemeBordure_final img,
+    .SixiemeBordure_final img
+    {
+    	height: 150px;
+    	width: 100%;
+    	object-fit: cover;
+    }
+
+    .PremiereBordure_final:hover,
+    .DeuxiemeBordure_final:hover,
+    .TroisiemeBordure_final:hover,
+    .QuatriemeBordure_final:hover,
+    .CinquiemeBordure_final:hover,
+    .SixiemeBordure_final:hover
+    {
+     transform: scale(1.01);
+     
+    }
+    #Footer_flex
+    {
+      right: 50px;
+    }
+ 
+}
+
+/*******Premiere section Hébergements*******/
+@media screen and (max-width:800px )
+
+{
+	#PremiereSection
+	{
+		border:none;
+		background-color: white;
+	}
+	#BordureFlex_first
+	{
+       flex-direction: column;
+   }
+   #BordureFlex_second
+   {
+       flex-direction: column;
+   }
+
+   .miniBordure
+   {
+      width: 100%;
+  }
+  .miniBordure:hover
+  {
+      transform: scale(1.02);
+      transition: 0.2s ease;
+
+  }
+  .other-page
+  {
+      padding-top: 0;
+      padding-left: 5px;
+  }
+  #Footer_flex
+    {
+      right: 20px;
+    }
+
+ 
+
+
+}
+
+
+
+/**********************************Telephone********************************/
+/*Les choses à modfier en plus : NAV +Filtres + et footer ca dépend si il est pas en column*/
+
+
+
+@media screen and (max-width: 350px )
+{
+	.star-icons_aside
+	{
+		padding-top: 0; 
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
